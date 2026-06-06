@@ -1,0 +1,26 @@
+Actúa como un desarrollador Frontend experto y diseñador de interfaces UI/UX UI sénior. 
+
+Quiero que apliques una paleta de colores corporativa y específica en cada una de las paginas de la página web /home/franciscoalanzavesromero/THE_SOFTWARE_REPUBLIC_GALIA.
+El objetivo es lograr un diseño limpio, profesional, con alta legibilidad y con una estética moderna de software SaaS logístico empresarial.
+
+Aquí tienes la paleta de colores exacta que debes utilizar obligatoriamente, sin inventar ni añadir tonalidades fuera de este rango:
+
+/* ==========================================================================
+   PALETA DE COLORES CORPORATIVA The software republic
+   ========================================================================== */
+- Azul Marino Dominante (Primary): #083978 (Para encabezados, botones principales, barras de navegación primarias) 083978
+- Turquesa de Acento (Secondary): #3A72EC (Para elementos activos, enlaces, hover states importantes, iconos destacados)
+- Naranja de Acción (Accent): #6C757D (Exclusivo para llamadas a la acción críticas -CTA-, estados de alerta o botones de conversión) 
+- Fondo de Aplicación (Background): #f4f7f6 (Para los fondos generales detrás de los bloques y módulos)
+- Fondo de Componentes (Surface): #ffffff (Para tarjetas, contenedores principales, formularios de login y bloques de contenido)
+- Variación Oscura (Dark): #1b263b (Para pies de página, barras laterales o menús oscuros alternativos)
+- Texto Principal: #1d2d44 (Gris azulado oscuro de alto contraste para textos y títulos principales)
+- Texto Secundario: #6c757d (Para subtítulos, marcas de agua, placeholders o etiquetas secundarias)
+- Bordes e Inputs: #e2e8f0 (Para líneas divisorias, bordes de tablas y bordes de los campos de formulario)
+- Éxito / Correcto: #2b9348 (Para notificaciones de éxito o estados completados)
+- Advertencia / Alerta: #e9c46a (Para avisos de atención o procesos pendientes)
+- Error / Peligro: #d90429 (Para mensajes de error, validaciones incorrectas o cancelaciones)
+
+Por favor, reescribe, diseña o maqueta el código que te voy a proporcionar asegurándote de:
+1. Mapear de manera lógica cada color a su función correspondiente de la interfaz (ej. no uses el naranja de acción para textos normales, úsalo solo para destacar).
+2. Asegurar un contraste excelente para accesibilidad web.

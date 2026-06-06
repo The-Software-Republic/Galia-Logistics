@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Galia Logistics | ERP Inteligente para Transporte y Logística</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ERP especializado en el sector del transporte y la logística. Gestión de flotas, rutas, facturación, envíos y más." name="description">
+    <meta content="ERP logística, transporte, NVOCC, facturación, envíos, contenedores, flotas" name="keywords">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow" style="width: 3rem; height: 3rem; background-color: var(--secondary);" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/galia_logo.png" alt="Galia Logistics" style="height: 50px; width: auto;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                <a href="service.html" class="nav-item nav-link">Módulos</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Plataforma</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="feature.html" class="dropdown-item">Funcionalidades</a>
+                        <a href="price.html" class="dropdown-item">Planes</a>
+                        <a href="quote.html" class="dropdown-item">Solicitar Demo</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonios</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contacto</a>
+            </div>
+            <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones me-3" style="color: var(--secondary);"></i><span style="color: var(--primary);">+34 900 123 456</span></h4>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative mb-5">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="Galia Logistics ERP">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 40, 85, .80);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-uppercase mb-3 animated slideInDown" style="color: var(--light);">ERP para Transporte y Logística</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Gestiona tus operaciones con Galia Logistics</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">La plataforma integral que centraliza clientes, envíos, facturación, contenedores y analítica en un solo sistema. Diseñada para empresas de transporte marítimo, terrestre y aéreo.</p>
+                                <a href="quote.html" class="btn py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color: var(--accent); color: #FFFFFF; font-weight: 700;">Solicitar Demo</a>
+                                <a href="service.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Ver Módulos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="Galia NVOCC ERP">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 40, 85, .80);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-uppercase mb-3 animated slideInDown" style="color: var(--secondary);">NVOCC & Operaciones Marítimas</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Dashboards Inteligentes y <span style="color: var(--secondary);">Analítica ML</span></h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Proyecciones de ingresos, scoring de salud de clientes, cálculo de CLV y detección de churn. Toma decisiones basadas en datos con nuestra capa de inteligencia artificial.</p>
+                                <a href="feature.html" class="btn py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color: var(--accent); color: #FFFFFF; font-weight: 700;">Explorar Funcionalidades</a>
+                                <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Hablar con un Asesor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="Galia ERP Plataforma">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="text-uppercase mb-3" style="color: var(--teal);">Sobre Galia</h6>
+                    <h1 class="mb-5">El ERP que conecta tu cadena logística de punta a punta</h1>
+                    <p class="mb-5">Galia es una plataforma ERP diseñada específicamente para el sector del transporte y la logística. Centraliza la gestión comercial, operativa y financiera de tu empresa en un sistema moderno, escalable y con inteligencia artificial integrada.</p>
+                    <div class="row g-4 mb-5">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                            <i class="fa fa-cogs fa-3x mb-3" style="color: var(--secondary);"></i>
+                            <h5>Stack Moderno</h5>
+                            <p class="m-0">Django + React + TypeScript + PostgreSQL. Arquitectura API REST con autenticación JWT y roles granulares.</p>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                            <i class="fa fa-shield-alt fa-3x mb-3" style="color: var(--secondary);"></i>
+                            <h5>Seguridad Empresarial</h5>
+                            <p class="m-0">Keycloak OIDC, audit trail inmutable, rate limiting y headers de seguridad. Cumplimiento normativo integral.</p>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn py-3 px-5" style="background-color: var(--secondary); color: #FFFFFF; font-weight: 700;">Conocer Más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Fact Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-uppercase mb-3" style="color: var(--teal);">Números que Hablan</h6>
+                    <h1 class="mb-5">Potencia tu Operación con Galia</h1>
+                    <p class="mb-5">Una arquitectura robusta diseñada para escalar con tu negocio. Más de 50 modelos de datos, 30+ endpoints API y 70+ páginas de interfaz.</p>
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-headphones fa-2x flex-shrink-0 p-3 text-white" style="background-color: var(--secondary);"></i>
+                        <div class="ps-4">
+                            <h6>Soporte técnico especializado</h6>
+                            <h3 class="m-0" style="color: var(--secondary);">+34 900 123 456</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="stat-card wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa fa-cubes fa-2x mb-3" style="color: var(--secondary);"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">50</h2>
+                                <p class="text-white mb-0">Modelos de Datos</p>
+                            </div>
+                            <div class="stat-card mt-4 wow fadeIn" data-wow-delay="0.5s" style="background-color: var(--teal);">
+                                <i class="fa fa-code fa-2x mb-3 text-white"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">30</h2>
+                                <p class="text-white mb-0">Endpoints API</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="stat-card mt-4 mt-sm-0 wow fadeIn" data-wow-delay="0.7s" style="background-color: var(--primary);">
+                                <i class="fa fa-desktop fa-2x mb-3 text-white"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">70</h2>
+                                <p class="text-white mb-0">Páginas de Interfaz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-uppercase" style="color: var(--teal);">Módulos Principales</h6>
+                <h1 class="mb-5">Explora Nuestra Plataforma</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4 module-item">
+                        <div class="module-icon mx-auto">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h4 class="mb-3 text-center">CRM 360°</h4>
+                        <p>Gestión centralizada de clientes, contactos, documentos y actividad comercial. Pipeline de ventas con seguimiento de oportunidades.</p>
+                        <a class="btn-slide mt-2" href="service.html"><i class="fa fa-arrow-right"></i><span>Ver Más</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4 module-item">
+                        <div class="module-icon mx-auto">
+                            <i class="fa fa-file-invoice-dollar"></i>
+                        </div>
+                        <h4 class="mb-3 text-center">Facturación</h4>
+                        <p>Generación de facturas con datos fiscales congelados, Notas de Crédito, conciliación de pagos y cálculo de comisiones automatizado.</p>
+                        <a class="btn-slide mt-2" href="service.html"><i class="fa fa-arrow-right"></i><span>Ver Más</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4 module-item">
+                        <div class="module-icon mx-auto">
+                            <i class="fa fa-ship"></i>
+                        </div>
+                        <h4 class="mb-3 text-center">Envíos NVOCC</h4>
+                        <p>Bookings, envíos, contenedores, carga y paquetes. Seguimiento completo con timeline visual y gestión de eventos.</p>
+                        <a class="btn-slide mt-2" href="service.html"><i class="fa fa-arrow-right"></i><span>Ver Más</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4 module-item">
+                        <div class="module-icon mx-auto">
+                            <i class="fa fa-file-alt"></i>
+                        </div>
+                        <h4 class="mb-3 text-center">Documentos Marítimos</h4>
+                        <p>Bill of Lading y Shipping Instructions con workflows de estado. Generación de PDF con WeasyPrint y almacenamiento en MinIO.</p>
+                        <a class="btn-slide mt-2" href="service.html"><i class="fa fa-arrow-right"></i><span>Ver Más</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4 module-item">
+                        <div class="module-icon mx-auto">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+                        <h4 class="mb-3 text-center">Analítica & ML</h4>
+                        <p>Dashboards de KPIs, proyecciones de ingresos, scoring de salud de clientes, CLV, churn y heatmap de actividad.</p>
+                        <a class="btn-slide mt-2" href="service.html"><i class="fa fa-arrow-right"></i><span>Ver Más</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4 module-item">
+                        <div class="module-icon mx-auto">
+                            <i class="fa fa-project-diagram"></i>
+                        </div>
+                        <h4 class="mb-3 text-center">Proyectos & RRHH</h4>
+                        <p>Gestión de proyectos con hitos y presupuestos, seguimiento de tiempo, gastos, equipo, habilidades y ausencias.</p>
+                        <a class="btn-slide mt-2" href="service.html"><i class="fa fa-arrow-right"></i><span>Ver Más</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container feature py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-uppercase mb-3" style="color: var(--teal);">Ventajas Competitivas</h6>
+                    <h1 class="mb-5">¿Por qué elegir Galia para tu empresa?</h1>
+                    <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                        <i class="fa fa-search-location fa-3x flex-shrink-0" style="color: var(--secondary) !important;"></i>
+                        <div class="ms-4">
+                            <h5>Tracking de Envíos en Tiempo Real</h5>
+                            <p class="mb-0">Sigue cada envío desde el origen hasta la entrega con actualizaciones al minuto. Tú y tus clientes sabréis siempre dónde está la mercancía.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
+                        <i class="fa fa-file-invoice-dollar fa-3x flex-shrink-0" style="color: var(--secondary) !important;"></i>
+                        <div class="ms-4">
+                            <h5>Facturación Automatizada sin Errores</h5>
+                            <p class="mb-0">Olvídate de las facturas manuales. Galia genera, envía y concilia tus facturas con los datos fiscales de cada cliente. Menos errores, más cobros a tiempo.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
+                        <i class="fa fa-boxes fa-3x flex-shrink-0" style="color: var(--secondary) !important;"></i>
+                        <div class="ms-4">
+                            <h5>Todo en un Solo Lugar</h5>
+                            <p class="mb-0">Centraliza clientes, contenedores, facturas, documentos marítimos y analítica en una sola plataforma. Adiós a las hojas de cálculo y los archivos perdidos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="Galia ERP Dashboard">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Tech Stack Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-uppercase" style="color: var(--teal);">Stack Tecnológico</h6>
+                <h1 class="mb-5">Construido con Tecnología de Última Generación</h1>
+            </div>
+            <div class="text-center wow fadeInUp" data-wow-delay="0.3s">
+                <span class="tech-badge">Django 5.x</span>
+                <span class="tech-badge">DRF</span>
+                <span class="tech-badge">React 19</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Vite 6</span>
+                <span class="tech-badge">Tailwind CSS</span>
+                <span class="tech-badge">Radix UI</span>
+                <span class="tech-badge">PostgreSQL 17</span>
+                <span class="tech-badge">Redis 7</span>
+                <span class="tech-badge">Celery</span>
+                <span class="tech-badge">MinIO</span>
+                <span class="tech-badge">WeasyPrint</span>
+                <span class="tech-badge">Keycloak OIDC</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">GitHub Actions</span>
+                <span class="tech-badge">Recharts</span>
+                <span class="tech-badge">FullCalendar</span>
+                <span class="tech-badge">vis-timeline</span>
+            </div>
+        </div>
+    </div>
+    <!-- Tech Stack End -->
+
+
+    <!-- Pricing Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-uppercase" style="color: var(--teal);">Planes de Implementación</h6>
+                <h1 class="mb-5">Escoge el Plan que Necesitas</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-4">
+                            <h5 mb-1" style="color: var(--secondary);">Starter</h5>
+                            <h1 class="display-5 mb-0">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">€</small>499<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ mes</small>
+                            </h1>
+                        </div>
+                        <div class="p-4 pt-0">
+                            <p><i class="fa fa-check text-success me-3"></i>Hasta 5 usuarios</p>
+                            <p><i class="fa fa-check text-success me-3"></i>CRM + Facturación</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Gestión de envíos básica</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Soporte por email</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Actualizaciones incluidas</p>
+                            <a class="btn-slide mt-2" href="quote.html"><i class="fa fa-arrow-right"></i><span>Contactar</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="price-item" style="border: 2px solid var(--secondary);">
+                        <div class="border-bottom p-4 mb-4">
+                            <h5 class="mb-1" style="color: var(--secondary);">Professional</h5>
+                            <h1 class="display-5 mb-0">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">€</small>1.299<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ mes</small>
+                            </h1>
+                        </div>
+                        <div class="p-4 pt-0">
+                            <p><i class="fa fa-check text-success me-3"></i>Hasta 20 usuarios</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Módulos completos NVOCC</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Análisis ML + Dashboards</p>
+                            <p><i class="fa fa-check text-success me-3"></i>API completa</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Soporte prioritario</p>
+                            <a class="btn-slide mt-2" href="quote.html"><i class="fa fa-arrow-right"></i><span>Contactar</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="price-item">
+                        <div class="border-bottom p-4 mb-4">
+                            <h5 class="mb-1" style="color: var(--secondary);">Enterprise</h5>
+                            <h1 class="display-5 mb-0">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">€</small>Custom<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ mes</small>
+                            </h1>
+                        </div>
+                        <div class="p-4 pt-0">
+                            <p><i class="fa fa-check text-success me-3"></i>Usuarios ilimitados</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Personalización completa</p>
+                            <p><i class="fa fa-check text-success me-3"></i>On-premise o Cloud</p>
+                            <p><i class="fa fa-check text-success me-3"></i>SLA garantizado</p>
+                            <p><i class="fa fa-check text-success me-3"></i>Soporte 24/7</p>
+                            <a class="btn-slide mt-2" href="quote.html"><i class="fa fa-arrow-right"></i><span>Contactar</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing End -->
+
+
+    <!-- Quote Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-uppercase mb-3" style="color: var(--teal);">Solicita una Demo</h6>
+                    <h1 class="mb-5">Prueba Galia en tu Empresa</h1>
+                    <p class="mb-5">Agenda una demostración personalizada con nuestro equipo. Te mostraremos cómo Galia puede optimizar la gestión de tu operación logística.</p>
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-headphones fa-2x flex-shrink-0 p-3 text-white" style="background-color: var(--secondary);"></i>
+                        <div class="ps-4">
+                            <h6>¿Tienes preguntas?</h6>
+                            <h3 class="m-0" style="color: var(--secondary);">+34 900 123 456</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Nombre completo" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Correo electrónico" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Empresa" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Tamaño de empresa</option>
+                                        <option value="1">1-10 empleados</option>
+                                        <option value="2">11-50 empleados</option>
+                                        <option value="3">51-200 empleados</option>
+                                        <option value="4">200+ empleados</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" placeholder="Cuéntanos sobre tu operación logística..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn w-100 py-3" type="submit" style="background-color: var(--accent); color: #FFFFFF; font-weight: 700;">Solicitar Demostración</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="text-center">
+                <h6 class="text-uppercase" style="color: var(--teal);">Testimonios</h6>
+                <h1 class="mb-0">Lo que Dicen Nuestros Clientes</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item p-4 my-5">
+                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                    <div class="d-flex align-items-end mb-4">
+                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Carlos Méndez</h5>
+                            <p class="m-0">Director de Operaciones, TransMediterránea</p>
+                        </div>
+                    </div>
+                    <p class="mb-0">Galia transformó nuestra gestión de envíos. Pasamos de controlar todo en hojas de cálculo a tener un sistema integral con dashboards en tiempo real.</p>
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                    <div class="d-flex align-items-end mb-4">
+                        <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">María López</h5>
+                            <p class="m-0">CFO, LogísticaGlobal S.A.</p>
+                        </div>
+                    </div>
+                    <p class="mb-0">La facturación automatizada y la conciliación de pagos nos ahorraron 20 horas semanales. El semáforo de riesgo nos alerta antes de que haya problemas.</p>
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                    <div class="d-flex align-items-end mb-4">
+                        <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Javier Rodríguez</h5>
+                            <p class="m-0">CEO, NVOCC Iberia</p>
+                        </div>
+                    </div>
+                    <p class="mb-0">La gestión de Bookings y Bill of Lading es excepcional. Galia entiende las necesidades reales del sector marítimo.</p>
+                </div>
+                <div class="testimonial-item p-4 my-5">
+                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                    <div class="d-flex align-items-end mb-4">
+                        <img class="img-fluid flex-shrink-0" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Ana García</h5>
+                            <p class="m-0">Gerente, CargoExpress</p>
+                        </div>
+                    </div>
+                    <p class="mb-0">Implementamos Galia en 3 meses. La API es muy completa y nos permitió integrar el sistema con nuestra plataforma de tracking existente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- CTA Start -->
+    <div class="container-fluid cta-section wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white animated slideInDown mb-4">¿Listo para Optimizar tu Logística?</h1>
+            <p class="fs-5 mb-4 pb-2">Únete a las empresas que ya confían en Galia para gestionar su operación de transporte y logística.</p>
+            <a href="quote.html" class="btn py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color: var(--accent); color: #FFFFFF; font-weight: 700;">Solicitar Demo Gratis</a>
+            <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Hablar con un Asesor</a>
+        </div>
+    </div>
+    <!-- CTA End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem; background-color: var(--primary);">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Galia Logistics</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="color: var(--secondary);"></i>Calle Ejemplo 123, Madrid, España</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: var(--secondary);"></i>+34 900 123 456</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3" style="color: var(--secondary);"></i>info@galia-logistics.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Módulos</h4>
+                    <a class="btn btn-link" href="service.html">CRM 360°</a>
+                    <a class="btn btn-link" href="service.html">Facturación</a>
+                    <a class="btn btn-link" href="service.html">Envíos NVOCC</a>
+                    <a class="btn btn-link" href="service.html">Documentos Marítimos</a>
+                    <a class="btn btn-link" href="service.html">Analítica & ML</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Enlaces Rápidos</h4>
+                    <a class="btn btn-link" href="about.html">Nosotros</a>
+                    <a class="btn btn-link" href="feature.html">Funcionalidades</a>
+                    <a class="btn btn-link" href="price.html">Planes</a>
+                    <a class="btn btn-link" href="contact.html">Contacto</a>
+                    <a class="btn btn-link" href="quote.html">Solicitar Demo</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <p>Recibe novedades sobre logística y tecnología empresarial.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Tu correo electrónico">
+                        <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2" style="background-color: var(--secondary); color: #FFFFFF; font-weight: 700;">Suscribir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Galia Logistics</a>, Todos los derechos reservados.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Conectamos carga. Impulsamos negocios.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-lg-square rounded-0 back-to-top" style="background-color: var(--secondary);"><i class="bi bi-arrow-up" style="color: #FFFFFF;"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
