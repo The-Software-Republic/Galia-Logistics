@@ -134,19 +134,20 @@
                 <div class="col-lg-6 contact-form wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="text-uppercase mb-3" style="color: var(--teal);">Escríbenos</h6>
                     <h1 class="mb-5">Envíanos un Mensaje</h1>
-                    <form>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="2aa9bc1c-4a2e-454f-b339-9827d9ad3d62">
                         <div class="row g-3">
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Nombre completo" style="height: 55px;">
+                                <input type="text" name="nombre" class="form-control border-0" placeholder="Nombre completo" style="height: 55px;" required>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control border-0" placeholder="Correo electrónico" style="height: 55px;">
+                                <input type="email" name="email" class="form-control border-0" placeholder="Correo electrónico" style="height: 55px;" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control border-0" placeholder="Asunto" style="height: 55px;">
+                                <input type="text" name="asunto" class="form-control border-0" placeholder="Asunto" style="height: 55px;">
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control border-0" placeholder="Mensaje" rows="6"></textarea>
+                                <textarea name="mensaje" class="form-control border-0" placeholder="Mensaje" rows="6" required></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="btn w-100 py-3" type="submit" style="background-color: var(--accent); color: #FFFFFF; font-weight: 700;">
