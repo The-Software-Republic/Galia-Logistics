@@ -1,6 +1,6 @@
 Actúa como un desarrollador Frontend experto y diseñador de interfaces UI/UX UI sénior. 
 
-Quiero que apliques una paleta de colores corporativa y específica en cada una de las paginas de la página web /home/franciscoalanzavesromero/THE_SOFTWARE_REPUBLIC_GALIA.
+Quiero que apliques una paleta de colores corporativa y específica en cada una de las paginas de la página web /home/franciscoalanzavesromero/THE_SOFTWARE_REPUBLIC.
 El objetivo es lograr un diseño limpio, profesional, con alta legibilidad y con una estética moderna de software SaaS logístico empresarial.
 
 Aquí tienes la paleta de colores exacta que debes utilizar obligatoriamente, sin inventar ni añadir tonalidades fuera de este rango:
